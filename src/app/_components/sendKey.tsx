@@ -7,7 +7,7 @@ export function SendKey() {
 
   async function postLocal() {
     console.log(ip);
-    await fetch(`http://${ip}:3001/press/E`, {headers:{
+    await fetch(`https://${ip}:3001/press/E`, {headers:{
         "Access-Control-Request-Private-Network": "true",
     }});
   }
